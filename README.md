@@ -149,7 +149,3 @@ Main libraries:
 2. The index needs to be recreated manually if new notes are added.
 
 ---
-
-## License
-
-This project is licensed under the MIT License.
