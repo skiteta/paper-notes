@@ -1,3 +1,5 @@
+![paper_notes_resized](https://github.com/user-attachments/assets/da5ff11d-8139-4168-b7bf-dd41f1a9833f)
+
 # PaperNotes: A Semantic Search Tool for Research Notes
 
 PaperNotes is a **Streamlit-based app** that uses **OpenAI's CLIP model** for semantic search of research notes written in Markdown. It lets users search notes by metadata, summary, or full text, view search results, and read notes rendered in Markdown.
