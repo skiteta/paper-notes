@@ -1,61 +1,91 @@
-PaperNotes
+# PaperNotes: A Semantic Search Tool for Research Notes
 
-This application is a Streamlit-based research note search tool that uses OpenAI's CLIP model for semantic search. It enables users to search for research notes written in Markdown format based on their metadata, summary, or full text. Users can view search results and explore the detailed contents of each note in a markdown-rendered format. The search results and state are cached for a smooth user experience.
+PaperNotes is a **Streamlit-based app** that uses **OpenAI's CLIP model** for semantic search of research notes written in Markdown. It lets users search notes by metadata, summary, or full text, view search results, and read notes rendered in Markdown.
 
-Features
+---
 
-Semantic Search:
-Powered by CLIP's text encoding for high-accuracy search.
-Allows keyword-based queries to find relevant research notes based on metadata and summary.
-Markdown Rendering:
-Displays research notes in markdown format for clear readability.
-Cached Search State:
-Retains search results and query inputs for seamless navigation between search results and note details.
-Interactive User Interface:
-Streamlit-based interface with easy navigation between search results and note details.
-How It Works
+## Key Features
 
-Index Creation:
-The application scans a specified directory (notes) containing Markdown files.
-Extracts metadata (e.g., title, authors, keywords, summary) and processes the content with CLIP for vectorization.
-Search:
-Users input a query.
-The app computes the similarity between the query and indexed notes using cosine similarity in the CLIP-encoded vector space.
-Results:
-Displays a ranked list of relevant research notes based on similarity scores.
-Each result includes the title, summary, and score.
-Detailed View:
-Clicking on a result shows the full content of the note in markdown format.
-Users can navigate back to the search results.
-Installation
+- **Semantic Search**: 
+  - High-accuracy keyword-based search using CLIP text encoding.
+- **Markdown Rendering**:
+  - Displays notes in an easy-to-read Markdown format.
+- **Cached Search State**:
+  - Keeps search results and queries for smooth navigation.
+- **Interactive Interface**:
+  - Switch between search results and detailed note views seamlessly.
 
-Prerequisites
-Python 3.8+
-Pip
-Clone the Repository
-git clone <repository_url>
-cd <repository_directory>
-Install Dependencies
-pip install -r requirements.txt
-Usage
+---
 
-Place your research notes in the notes directory in Markdown format.
-Run the application:
-streamlit run app.py
-Open the local Streamlit server URL (e.g., http://localhost:8501) in your web browser.
-Perform the following actions:
-Create an index by clicking "インデックス作成".
-Enter search queries in the text box.
-Click "詳細を表示" to view the full content of a selected note.
-Directory Structure
+## How It Works
 
-.
-├── app.py               # Main application script
-├── requirements.txt     # Python dependencies
-├── notes/               # Directory containing research notes in Markdown format
-├── README.md            # Documentation
-Example Markdown Note Format
+1. **Index Creation**:
+   - Scans the `notes/` directory for Markdown files.
+   - Extracts metadata (title, authors, keywords, summary) and encodes the content with CLIP.
 
+2. **Search**:
+   - Input a query to find notes by similarity in the CLIP-encoded vector space.
+
+3. **Results**:
+   - Ranks notes by relevance.
+   - Each result shows the title, summary, and similarity score.
+
+4. **Detailed View**:
+   - Click a result to read the full note in Markdown.
+   - Navigate back to search results without losing query or state.
+
+---
+
+## Installation
+
+### Prerequisites
+
+- Python 3.8+
+- Pip
+
+### Steps
+
+1. Clone the repository:
+
+   ```bash
+   git clone <repository_url>
+   cd <repository_directory>
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Run the app:
+
+   ```bash
+   streamlit run app.py
+   ```
+
+4. Open the app in your browser (e.g., `http://localhost:8501`).
+
+---
+
+## Usage
+
+1. **Prepare Notes**:
+   - Place your research notes in the `notes/` directory in Markdown format.
+
+2. **Search**:
+   - Click "インデックス作成" to create an index.
+   - Enter a query to search notes.
+   - View results with titles, summaries, and scores.
+
+3. **Read Notes**:
+   - Click "詳細を表示" to see the full note rendered in Markdown.
+
+---
+
+## Example Markdown Note
+
+```markdown
 # Tell Me More! Towards Implicit User Intention Understanding of Language Model Driven Agents
 Metadata
 Authors: [Cheng Qian, Bingxiang He, Zhong Zhuang, Jia Deng, Yujia Qin, Xin Cong, Zhong Zhang, Jie Zhou, Yankai Lin, Zhiyuan Liu, Maosong Sun]
@@ -67,33 +97,57 @@ Summary
 目的:
 
 従来のエージェントモデルでは、ユーザーから曖昧なタスク指示に対応できない課題を解決するため、IN3データセットを構築し、Mistral-Interactモデルを開発しました。
-Requirements
+```
 
-Streamlit: Web interface
-Torch: CLIP model backend
-Transformers: Hugging Face CLIP model loader
-Pandas: Data manipulation
-Scikit-learn: Cosine similarity computation
-Install via requirements.txt
+---
+
+## Requirements
+
+Install dependencies with:
+
+```bash
 pip install -r requirements.txt
-Key Libraries
+```
 
-Streamlit: For creating the user interface.
-Transformers: For loading CLIP models.
-Torch: Backend for CLIP operations.
-Customization
+Main libraries:
 
-Change Notes Directory: Modify the NOTES_DIR variable in the code to point to a different directory containing Markdown files.
-Add Filters: Extend the app to allow filtering by metadata such as year, authors, or categories.
-Known Limitations
+- **Streamlit**: Web interface.
+- **Torch**: CLIP backend.
+- **Transformers**: For loading CLIP models.
+- **Pandas**: Data processing.
+- **Scikit-learn**: Cosine similarity computation.
 
-Markdown Format Dependence: Notes must follow the defined format for metadata extraction.
-No Real-time Index Update: The index must be recreated manually if new notes are added.
-Future Enhancements
+---
 
-Real-time Index Update: Automatically detect and index new notes.
-Highlight Matching Text: Highlight query matches in the results and detailed view.
-Export Results: Add an option to export search results to a CSV or JSON file.
-License
+## Directory Structure
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+```plaintext
+.
+├── app.py               # Main application script
+├── requirements.txt     # Python dependencies
+├── notes/               # Directory containing Markdown notes
+├── README.md            # Documentation
+```
+
+---
+
+## Customization
+
+- **Change Notes Directory**:
+  Update the `NOTES_DIR` variable in `app.py` to point to a different folder.
+
+- **Add Filters**:
+  Extend the app to filter by metadata such as year, authors, or categories.
+
+---
+
+## Limitations
+
+1. Notes must follow a predefined Markdown format for metadata extraction.
+2. The index needs to be recreated manually if new notes are added.
+
+---
+
+## License
+
+This project is licensed under the MIT License.
