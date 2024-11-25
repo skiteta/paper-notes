@@ -2,11 +2,11 @@
 
 ## Metadata
 
-- Authors: [[Kaiming He](https://arxiv.org/search/cs?searchtype=author&query=He,+K), [Xiangyu Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang,+X), [Shaoqing Ren](https://arxiv.org/search/cs?searchtype=author&query=Ren,+S), [Jian Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun,+J)]
+- Authors: [Kaiming He](https://arxiv.org/search/cs?searchtype=author&query=He,+K), [Xiangyu Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang,+X), [Shaoqing Ren](https://arxiv.org/search/cs?searchtype=author&query=Ren,+S), [Jian Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun,+J)
 - Year: 2015
 - Category: Computer Vision and Pattern Recognition
-- Topics: [CNN, Image Classifier]
-- Keyword: [ResNet]
+- Topics: CNN, Image Classifier
+- Keyword: ResNet
 
 ## Summary
 

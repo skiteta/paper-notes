@@ -2,11 +2,11 @@
 
 ## Metadata
 
-- Authors: [[Gao Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang,+G), [Zhuang Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu,+Z), [Laurens van der Maaten](https://arxiv.org/search/cs?searchtype=author&query=van+der+Maaten,+L), [Kilian Q. Weinberger](https://arxiv.org/search/cs?searchtype=author&query=Weinberger,+K+Q)https://arxiv.org/search/cs?searchtype=author&query=Rabinovich,+A)]
+- Authors: [Gao Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang,+G), [Zhuang Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu,+Z), [Laurens van der Maaten](https://arxiv.org/search/cs?searchtype=author&query=van+der+Maaten,+L), [Kilian Q. Weinberger](https://arxiv.org/search/cs?searchtype=author&query=Weinberger,+K+Q)https://arxiv.org/search/cs?searchtype=author&query=Rabinovich,+A)
 - Year: 2016
 - Category: Computer Vision and Pattern Recognition
-- Topics: [CNN, Image Classifier]
-- Keyword: [DenseNet]
+- Topics: CNN, Image Classifier
+- Keyword: DenseNet
 
 ## Summary
 

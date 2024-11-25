@@ -2,11 +2,11 @@
 
 ## Metadata
 
-- Authors: [[Karen Simonyan](https://arxiv.org/search/cs?searchtype=author&query=Simonyan,+K), [Andrew Zisserman](https://arxiv.org/search/cs?searchtype=author&query=Zisserman,+A)]
+- Authors: [Karen Simonyan](https://arxiv.org/search/cs?searchtype=author&query=Simonyan,+K), [Andrew Zisserman](https://arxiv.org/search/cs?searchtype=author&query=Zisserman,+A)
 - Year: 2014
 - Category: Computer Vision and Pattern Recognition
-- Topics: [CNN, Image Classifier]
-- Keyword: [VGG]
+- Topics: CNN, Image Classifier
+- Keyword: VGG
 
 ## Summary
 

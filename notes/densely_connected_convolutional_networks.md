@@ -2,11 +2,11 @@
 
 ## Metadata
 
-- Authors: [[Christian Szegedy](https://arxiv.org/search/cs?searchtype=author&query=Szegedy,+C), [Sergey Ioffe](https://arxiv.org/search/cs?searchtype=author&query=Ioffe,+S), [Vincent Vanhoucke](https://arxiv.org/search/cs?searchtype=author&query=Vanhoucke,+V), [Alex Alemi](https://arxiv.org/search/cs?searchtype=author&query=Alemi,+A)]
+- Authors: [Christian Szegedy](https://arxiv.org/search/cs?searchtype=author&query=Szegedy,+C), [Sergey Ioffe](https://arxiv.org/search/cs?searchtype=author&query=Ioffe,+S), [Vincent Vanhoucke](https://arxiv.org/search/cs?searchtype=author&query=Vanhoucke,+V), [Alex Alemi](https://arxiv.org/search/cs?searchtype=author&query=Alemi,+A)
 - Year: 2016
 - Category: Computer Vision and Pattern Recognition
-- Topics: [CNN, Image Classifier]
-- Keyword: [InceptionNetV4, InceptionResNet]
+- Topics: CNN, Image Classifier
+- Keyword: InceptionNetV4, InceptionResNet
 
 ## Summary
 
